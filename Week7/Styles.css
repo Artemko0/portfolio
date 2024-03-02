@@ -1,0 +1,52 @@
+.container  {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+flex-direction: column;
+height: 400px;
+border: 1px solid black;
+background: linear-gradient(rgba(111, 93, 216, 0.596), rgba(30, 255, 0, 0.705)); 
+}
+
+.message1 { order:3; }
+.message2 { order: 1; } 
+.message3 { order:2; }
+
+.message1 {
+color:brown;
+font-family: serif;
+font-size: 34pt;
+text-decoration: line-through;
+}
+
+.message2:hover ~ .message3 {
+    opacity: 1;
+}
+
+.message2 {
+color:midnightblue;
+font-family: serif;
+font-size: 24pt;
+text-decoration: underline;
+animation: blinking 1s linear infinite;
+}
+
+.message3 {
+color: rgba(255, 209, 102,);
+font-family: fantasy;
+font-size: 24pt;
+opacity: 0;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

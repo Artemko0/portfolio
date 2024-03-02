@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Russo One", sans-serif;
+    scroll-behavior: smooth;
+  }
+  nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: rgb(25, 14, 189);
+  }
+  nav a {
+      color: black;
+      text-decoration: none;
+      font-size: 12px;
+      transition: all .6s;
+  }
+  nav a:hover {
+      color: rgb(131, 58, 180);
+  }
+  section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: large;
+  }
+
+  .marquee-text{
+    margin: 30px auto;
+    max-width: 80%;
+    overflow: hidden;
+  }
+
+  .marquee-text div {
+    width: 100%;
+    animation: marquee-text 3s linear infinite;
+  }
+
+  .pageContainer {
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 80vw;
+    min-height: 100vh;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .pageContainer2 {
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .container2 {
+    width: 80vw;
+    min-height: 100vh;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #shadow {
+    text-shadow: var(--trig-px) var(--trig-px) 0px rgba(217, 255, 0, 0.822)
+  }
+
+  h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: #000000;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 72px;
+  }
+
+  #flip {
+    perspective-origin: 25% 75%;
+    transform-style: preserve-3d;
+    transform: rotate3d(1, 0.1, 0.1, var(--trig-deg));
+  }
+
+  .last-section {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  #gradientBack {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(
+      var(--trig-deg),
+      rgb(12, 150, 155) 0%,
+      rgb(23, 20, 133) 50%,
+      rgb(93, 12, 131) 100%
+    );
+  }
+  #gradientBack2 {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(
+      var(--trig-deg),
+      rgb(12, 150, 155) 0%,
+      rgb(23, 20, 133) 50%,
+      rgb(93, 12, 131) 100%);
+  }
+
+  #gradientBack3 {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(
+      var(--trig-deg),
+      rgb(12, 150, 155) 0%,
+      rgb(23, 20, 133) 50%,
+      rgb(93, 12, 131) 100%);
+  }
+
+@keyframes marquee-text {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

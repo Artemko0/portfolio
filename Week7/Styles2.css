@@ -1,0 +1,32 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(rgba(31, 160, 219, 0.596), rgba(14, 31, 182, 0.5));
+}
+
+.message1 {
+    font-size: 32pt;
+    animation: move 3s linear infinite;
+    margin-bottom: 100px;
+}
+
+.image {
+    opacity: 0;
+    transition: all 1s;
+}
+.image:hover {
+    opacity: 1;
+}
+
+@keyframes move {
+    from 
+    {
+        transform: rotate(10deg);
+    }
+    to{
+        transform: rotate(-10deg);
+    }
+}
