@@ -1,0 +1,36 @@
+body{
+    background-image: url("bg.jpg");
+}
+
+a{
+    width: 800px;
+    min-height: 50px;
+    background-color: #333;
+    float: left ;
+    color: honeydew;
+    padding: 14px 16px;
+}
+
+footer {
+    background-color: #333;
+}
+
+nav{
+    list-style-type: none;
+    margin: 600px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+    color: honeydew;
+}
+
+p {
+    text-align: justify;
+    font-size: 27px;
+}
+
+img {
+    width: 300px;
+    margin-top: 10px;
+}
+
